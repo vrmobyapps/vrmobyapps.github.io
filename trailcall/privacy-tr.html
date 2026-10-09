@@ -35,7 +35,7 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 <header>
 <div class="brand" lang="en">TRAILCALL</div>
 <h1>Gizlilik Politikası</h1>
-<p class="meta">Yürürlük tarihi: 2 Ekim 2026 · Android için Trailcall (com.vrmoby.trailcall) · Veri sorumlusu: VR Moby · İletişim: <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
+<p class="meta">Yürürlük tarihi: 9 Ekim 2026 · Android için Trailcall (com.vrmoby.trailcall) · Veri sorumlusu: VR Moby · İletişim: <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
 </header>
 <nav aria-label="Dil">
 <span aria-current="page">Türkçe</span>
@@ -47,8 +47,8 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 <main>
 <section class="lead">
 <h2><b>1.</b> Özet</h2>
-<p>Trailcall, yakındaki telefonlar arasında doğrudan çalışan bir bas konuş telsiz uygulamasıdır. Trailcall'un bir sunucusu yoktur, hesap açılmaz. Biz, yani VR Moby, hiçbir kişisel veriyi kendimiz toplamaz, almaz ve saklamayız.</p>
-<p>Cihazınızdan dışarı çıkan veri yalnızca iki şekilde çıkar: sesiniz, adınız ve kanalınız doğrudan kanalınızdaki yakın telefonlara gider; ücretsiz sürümde ise Google'ın reklam hizmeti 8. bölümde anlatılan bazı cihaz verilerini işler.</p>
+<p>Trailcall, yakındaki telefonlar arasında doğrudan çalışan bir bas-konuş telsiz uygulamasıdır. Trailcall sunucusu ve hesap yoktur. Biz, VR Moby, sesinizi, adınızı, kanalınızı ya da konumunuzu alan hiçbir sunucu işletmiyoruz.</p>
+<p>Veriler cihazınızdan üç yolla çıkar: sesiniz, adınız, kanalınız ve (yalnızca siz seçerseniz) konumunuz doğrudan kanalınızdaki yakın telefonlara gider; ücretsiz sürümde Google'ın reklam servisi 8. bölümde anlatılan cihaz verilerini işler; Google Firebase Analytics ve Crashlytics ise 11. bölümde anlatılan kullanım ve çökme verilerini işler.</p>
 </section>
 <section>
 <h2><b>2.</b> Ses ve mikrofon</h2>
@@ -67,7 +67,8 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 </section>
 <section>
 <h2><b>5.</b> Konum</h2>
-<p>Konumunuz yalnızca "Bu noktayı işaretle" seçeneğine dokunduğunuzda kullanılır (Trailcall Plus özelliği). Koordinatlar yalnızca cihazınızda saklanır; diğer kullanıcılarla veya herhangi bir sunucuyla asla paylaşılmaz.</p>
+<p>Konumunuz (GPS) yalnızca şu düğmelerden birine dokunduğunuzda kullanılır: "Bu noktayı işaretle" (noktayı cihazınıza kaydeder), "Konumumu gönder", "Kanalla paylaş" (kayıtlı bir noktayı gönderir) ya da "Canlı konum" (Trailcall Plus; kanaldayken, siz kapatana ya da kanaldan çıkana kadar yaklaşık 10 saniyede bir konumunuzu gönderir).</p>
+<p>Gönderdiğinizde konumunuz (koordinat, doğruluk, zaman) aynı kanal ve şifredeki kişilere doğrudan telefondan telefona gider. Hiçbir sunucuya gönderilmez ya da kaydedilmez; Firebase'e veya reklam servisine de gönderilmez. Alan telefonlar bunu yalnızca o oturum boyunca bellekte tutar. Kayıtlı noktalar yalnızca cihazınızda kalır.</p>
 
 </section>
 <section>
@@ -95,12 +96,13 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 </section>
 <section>
 <h2><b>10.</b> Yükleme yönlendiricisi</h2>
-<p>Trailcall'u bir davet QR kodundan yüklerseniz, kanal ve PIN'i önceden doldurmak için Play Install Referrer bilgisi cihazınızda bir kez okunur. Trailcall bu bilgiyi hiçbir yere göndermez.</p>
+<p>Trailcall'u bir davet QR kodundan ya da davet bağlantısından kurarsanız Play Install Referrer, kanal ve şifreyi otomatik doldurmak ya da davet edenin kodunu hatırlamak için cihazınızda bir kez okunur. Bu kod (rastgele 8 karakterlik bir cihaz tanımlayıcısı, ad değil) davet edenin ödülünü alabilmesi için yalnızca kanalınızdaki yakın telefonlara gönderilir; hiçbir sunucuya gitmez. Kurulum olayı Firebase Analytics'e kaydedilir (11. bölüm).</p>
 
 </section>
 <section>
-<h2><b>11.</b> Analitik ve çökme raporlaması yok</h2>
-<p>VR Moby, Trailcall'a herhangi bir analitik SDK'sı veya çökme raporlama SDK'sı eklememiştir.</p>
+<h2><b>11.</b> Analitik ve çökme raporlaması (Firebase)</h2>
+<p>Trailcall, uygulamanın nasıl kullanıldığını anlamak için Google Firebase Analytics (örneğin: ilk başarılı bağlantı, ilk bas-konuş, Plus ekranının açılması, konum gönderme/alma, davetler ve satın almalar) ve çökme raporları için Firebase Crashlytics kullanır. Google LLC / Google Ireland Ltd. tarafından sağlanan bu servisler rastgele bir uygulama örneği kimliği, cihaz modeli ve işletim sistemi sürümü, uygulama sürümü, dil, IP adresinden türetilen ülke, olay zamanları ve çökmelerde yığın izi ile cihaz durumunu toplar. Ses, adlar, kanal numaraları, şifreler ve koordinatlar Firebase'e asla gönderilmez.</p>
+<p>Onay gereken yerlerde (AEA, Birleşik Krallık, İsviçre) analitik verileri yalnızca 8. bölümdeki onay formuyla izin verdikten sonra toplanır; o zamana kadar Analytics "onay modu" depolamayı ve kişiselleştirmeyi kapalı tutar. Türkiye'deki kullanıcılar için KVKK geçerlidir. Tercihinizi daha sonra Ayarlar → Reklam gizlilik seçenekleri'nden değiştirebilirsiniz. Google'ın bu verileri nasıl kullandığı: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>. Veriler Firebase'de en fazla 14 ay (Analytics) ve 90 gün (Crashlytics) saklanır.</p>
 
 </section>
 <section>

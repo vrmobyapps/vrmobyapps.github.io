@@ -35,7 +35,7 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 <header>
 <div class="brand" lang="en">TRAILCALL</div>
 <h1>Privacy Policy</h1>
-<p class="meta">Effective date: 2 October 2026 · Trailcall for Android (com.vrmoby.trailcall) · Controller: VR Moby · Contact: <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
+<p class="meta">Effective date: 9 October 2026 · Trailcall for Android (com.vrmoby.trailcall) · Controller: VR Moby · Contact: <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
 </header>
 <nav aria-label="Language">
 <a href="privacy-tr.html" hreflang="tr" lang="tr">Türkçe</a>
@@ -47,8 +47,8 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 <main>
 <section class="lead">
 <h2><b>1.</b> Summary</h2>
-<p>Trailcall is a push-to-talk walkie-talkie that works directly between nearby phones. There is no Trailcall server and no account. We, VR Moby, do not collect, receive or store any personal data ourselves.</p>
-<p>The only data that leaves your device does so in two ways: your voice, name and channel go directly to nearby phones on your channel, and, in the free version, Google's advertising service processes certain device data as described in section 8.</p>
+<p>Trailcall is a push-to-talk walkie-talkie that works directly between nearby phones. There is no Trailcall server and no account. We, VR Moby, do not run any server that receives your voice, name, channel or location.</p>
+<p>Data leaves your device in three ways: your voice, name, channel and (only when you choose) your location go directly to nearby phones on your channel; Google's advertising service (free version) processes certain device data as described in section 8; and Google Firebase Analytics and Crashlytics process usage and crash data as described in section 11.</p>
 </section>
 <section>
 <h2><b>2.</b> Voice and microphone</h2>
@@ -67,7 +67,8 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 </section>
 <section>
 <h2><b>5.</b> Location</h2>
-<p>Your location is used only when you tap "Mark this point" (a Trailcall Plus feature). The coordinates are stored only on your device. They are never shared with other users or with any server.</p>
+<p>Your location (GPS) is used only when you tap one of these: "Mark this point" (saves a point on your device), "Send my location", "Share with channel" (sends a saved point) or "Live location" (Trailcall Plus; sends your position about every 10 seconds while you are in the channel and until you turn it off or leave).</p>
+<p>When you send it, your position (coordinates, accuracy, time) travels directly from phone to phone to the people on the same channel and PIN. It is never sent to, or stored on, any server, and it is not sent to Firebase or the advertising service. Phones that receive it keep it only in memory for the current session. Saved points stay only on your device.</p>
 
 </section>
 <section>
@@ -95,12 +96,13 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 </section>
 <section>
 <h2><b>10.</b> Install referrer</h2>
-<p>If you install Trailcall from an invite QR code, the Play Install Referrer is read once on your device to prefill the channel and PIN. Trailcall does not send it anywhere.</p>
+<p>If you install Trailcall from an invite QR code or an invite link, the Play Install Referrer is read once on your device to prefill the channel and PIN, or to remember the inviter's code. That code (a random 8-character device identifier, not a name) is sent only to nearby phones on your channel so the inviter can receive their reward; it is not sent to any server. The install event is recorded in Firebase Analytics (section 11).</p>
 
 </section>
 <section>
-<h2><b>11.</b> No analytics, no crash reporting</h2>
-<p>VR Moby does not include any analytics SDK or crash-reporting SDK in Trailcall.</p>
+<h2><b>11.</b> Analytics and crash reporting (Firebase)</h2>
+<p>Trailcall uses Google Firebase Analytics to understand how the app is used (for example: first successful connection, first push-to-talk, opening the Plus screen, sending or receiving a location, invites and purchases) and Firebase Crashlytics to receive crash reports. These services, provided by Google LLC / Google Ireland Ltd., collect a random app-instance identifier, device model and OS version, app version, language, country derived from IP address, event timestamps, and for crashes a stack trace and device state. Voice, names, channel numbers, PINs and coordinates are never sent to Firebase.</p>
+<p>Analytics data is collected only after you give consent where consent is required (EEA, UK, Switzerland) through the same consent form as in section 8; until then the Analytics "consent mode" keeps storage and personalization off. You can change your choice later under Settings → Ad privacy options. How Google uses this data: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>. Data is retained by Firebase for up to 14 months (Analytics) and 90 days (Crashlytics).</p>
 
 </section>
 <section>

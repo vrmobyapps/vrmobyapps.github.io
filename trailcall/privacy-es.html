@@ -35,7 +35,7 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 <header>
 <div class="brand" lang="en">TRAILCALL</div>
 <h1>Política de privacidad</h1>
-<p class="meta">Fecha de entrada en vigor: 2 de octubre de 2026 · Trailcall para Android (com.vrmoby.trailcall) · Responsable: VR Moby · Contacto: <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
+<p class="meta">Fecha de entrada en vigor: 9 de octubre de 2026 · Trailcall para Android (com.vrmoby.trailcall) · Responsable: VR Moby · Contacto: <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
 </header>
 <nav aria-label="Idioma">
 <a href="privacy-tr.html" hreflang="tr" lang="tr">Türkçe</a>
@@ -47,8 +47,8 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 <main>
 <section class="lead">
 <h2><b>1.</b> Resumen</h2>
-<p>Trailcall es un walkie-talkie de pulsar para hablar que funciona directamente entre teléfonos cercanos. No existe ningún servidor de Trailcall ni ninguna cuenta. Nosotros, VR Moby, no recopilamos, recibimos ni almacenamos ningún dato personal.</p>
-<p>Los datos solo salen de tu dispositivo de dos maneras: tu voz, tu nombre y tu canal van directamente a los teléfonos cercanos de tu canal y, en la versión gratuita, el servicio de publicidad de Google trata ciertos datos del dispositivo, como se explica en la sección 8.</p>
+<p>Trailcall es un walkie talkie de pulsar para hablar que funciona directamente entre móviles cercanos. No hay servidor de Trailcall ni cuenta. Nosotros, VR Moby, no operamos ningún servidor que reciba tu voz, tu nombre, tu canal ni tu ubicación.</p>
+<p>Los datos salen de tu dispositivo de tres maneras: tu voz, nombre, canal y (solo si tú lo decides) tu ubicación van directamente a los móviles cercanos de tu canal; el servicio de publicidad de Google (versión gratuita) procesa ciertos datos del dispositivo como se describe en la sección 8; y Google Firebase Analytics y Crashlytics procesan datos de uso y de fallos como se describe en la sección 11.</p>
 </section>
 <section>
 <h2><b>2.</b> Voz y micrófono</h2>
@@ -67,7 +67,8 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 </section>
 <section>
 <h2><b>5.</b> Ubicación</h2>
-<p>Tu ubicación solo se usa cuando tocas «Marcar este punto» (función de Trailcall Plus). Las coordenadas se guardan únicamente en tu dispositivo y nunca se comparten con otros usuarios ni con ningún servidor.</p>
+<p>Tu ubicación (GPS) se usa solo cuando tocas uno de estos botones: «Marcar este punto» (guarda un punto en tu dispositivo), «Enviar mi ubicación», «Compartir con el canal» (envía un punto guardado) o «Ubicación en vivo» (Trailcall Plus; envía tu posición cada 10 segundos aproximadamente mientras estás en el canal y hasta que la desactives o salgas).</p>
+<p>Al enviarla, tu posición (coordenadas, precisión, hora) viaja directamente de móvil a móvil a las personas del mismo canal y PIN. Nunca se envía ni se guarda en un servidor, y no se envía a Firebase ni al servicio de publicidad. Los móviles que la reciben la conservan solo en memoria durante la sesión actual. Los puntos guardados permanecen solo en tu dispositivo.</p>
 
 </section>
 <section>
@@ -95,12 +96,13 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 </section>
 <section>
 <h2><b>10.</b> Referencia de instalación</h2>
-<p>Si instalas Trailcall desde un código QR de invitación, el Play Install Referrer se lee una sola vez en tu dispositivo para rellenar el canal y el PIN. Trailcall no lo envía a ningún sitio.</p>
+<p>Si instalas Trailcall desde un código QR o un enlace de invitación, el Play Install Referrer se lee una vez en tu dispositivo para rellenar el canal y el PIN, o para recordar el código de quien te invitó. Ese código (un identificador de dispositivo aleatorio de 8 caracteres, no un nombre) se envía solo a los móviles cercanos de tu canal para que quien te invitó reciba su recompensa; no va a ningún servidor. El evento de instalación se registra en Firebase Analytics (sección 11).</p>
 
 </section>
 <section>
-<h2><b>11.</b> Sin analíticas ni informes de fallos</h2>
-<p>VR Moby no incluye en Trailcall ningún SDK de analítica ni de informes de fallos.</p>
+<h2><b>11.</b> Analíticas e informes de fallos (Firebase)</h2>
+<p>Trailcall usa Google Firebase Analytics para entender cómo se usa la app (por ejemplo: primera conexión correcta, primer pulsar para hablar, apertura de la pantalla Plus, envío o recepción de una ubicación, invitaciones y compras) y Firebase Crashlytics para recibir informes de fallos. Estos servicios, prestados por Google LLC / Google Ireland Ltd., recogen un identificador aleatorio de instancia de la app, modelo del dispositivo y versión del sistema, versión de la app, idioma, país derivado de la dirección IP, marcas de tiempo de los eventos y, en los fallos, una traza de pila y el estado del dispositivo. La voz, los nombres, los números de canal, los PIN y las coordenadas nunca se envían a Firebase.</p>
+<p>Donde se requiere consentimiento (EEE, Reino Unido, Suiza), los datos de analítica se recogen solo después de que lo des mediante el mismo formulario de la sección 8; hasta entonces el «modo de consentimiento» de Analytics mantiene desactivados el almacenamiento y la personalización. Puedes cambiar tu elección más tarde en Ajustes → Opciones de privacidad de anuncios. Cómo usa Google estos datos: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>. Firebase conserva los datos hasta 14 meses (Analytics) y 90 días (Crashlytics).</p>
 
 </section>
 <section>
