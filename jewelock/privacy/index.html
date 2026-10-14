@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<meta name="description" content="Privacy policy for the Jewelock block puzzle game by VR Moby (English and Turkish).">
-<title>Jewelock — Privacy Policy / Gizlilik Politikası</title>
+<meta name="description" content="Privacy policy for the Jewelock block puzzle game by VR Moby — English, Türkçe, Deutsch, Español, Português (Brasil).">
+<title>Jewelock — Privacy Policy</title>
+<script>document.documentElement.classList.remove('no-js');</script>
 <style>
   :root {
     --bg: #f6f7f9; --surface: #ffffff; --text: #1b1f24; --muted: #5b6470;
@@ -31,13 +32,18 @@
   code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.88em; overflow-wrap: anywhere; }
   .meta { color: var(--muted); font-size: 0.95rem; margin: 0; }
   .note { background: var(--note-bg); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem 0.3rem; margin: 1.2rem 0; }
-  .lang { display: flex; gap: 0.6rem; margin: 1rem 0 0; font-size: 0.95rem; }
-  .lang a { padding: 0.35rem 0.8rem; border: 1px solid var(--border); border-radius: 999px; text-decoration: none; background: var(--surface); }
   nav { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 0.9rem 1.1rem; margin: 1.2rem 0 0; font-size: 0.95rem; }
   nav p { margin: 0 0 0.4rem; font-weight: 600; }
   nav ol { margin: 0; padding-left: 1.3rem; columns: 2; column-gap: 2rem; }
   nav li { margin-bottom: 0.25rem; break-inside: avoid; }
-  section.tr { margin-top: 3rem; padding-top: 1rem; border-top: 3px double var(--border); }
+  .policy { display: none; }
+  .policy.active { display: block; }
+  .no-js .policy { display: block; }
+  header.top { padding: 0.6rem 0 0; }
+  .lang { display: flex; gap: 0.5rem; align-items: center; font-size: 0.95rem; }
+  .lang span { color: var(--muted); }
+  .lang a { padding: 0.3rem 0.7rem; border: 1px solid var(--border); border-radius: 999px; text-decoration: none; background: var(--surface); }
+  .lang a[aria-current="page"] { background: var(--accent); color: #fff; border-color: var(--accent); }
   @media (max-width: 520px) { body { font-size: 16px; } nav ol { columns: 1; } }
   footer { margin-top: 2.5rem; padding-top: 1.2rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }
 </style>
@@ -45,35 +51,37 @@
 <body>
 <main>
 
+<header class="top">
+  <nav class="lang" aria-label="Language">
+    <a href="#en" data-lang="en">EN</a><span>·</span><a href="#tr" data-lang="tr">TR</a><span>·</span><a href="#de" data-lang="de">DE</a><span>·</span><a href="#es" data-lang="es">ES</a><span>·</span><a href="#pt" data-lang="pt">PT</a>
+  </nav>
+</header>
+<section id="en" class="policy" lang="en">
 <header>
   <h1>Jewelock — Privacy Policy</h1>
   <p class="meta">Effective date: 14 October 2026</p>
   <p class="meta">Developer: VR Moby · Contact: <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
   <p class="meta">App: Jewelock: Block Puzzle (Android, package <code>com.vrmoby.jewelock</code>)</p>
-  <div class="lang"><a href="#en">English</a><a href="#tr">Türkçe</a></div>
 </header>
-
-<section id="en">
 <nav aria-label="Contents">
   <p>Contents</p>
   <ol>
-    <li><a href="#summary">Summary</a></li>
-    <li><a href="#device-data">Game data stored on your device</a></li>
-    <li><a href="#ads">Advertising (Google AdMob)</a></li>
-    <li><a href="#consent">Consent and ad choices</a></li>
-    <li><a href="#analytics">Analytics and crash reports (Firebase)</a></li>
-    <li><a href="#purchases">Purchases (Google Play Billing)</a></li>
-    <li><a href="#notifications">Local notifications</a></li>
-    <li><a href="#sharing">Sharing and rating</a></li>
-    <li><a href="#retention">Retention and deletion</a></li>
-    <li><a href="#children">Children</a></li>
-    <li><a href="#rights">Your rights</a></li>
-    <li><a href="#changes">Changes</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#en-summary">Summary</a></li>
+    <li><a href="#en-device-data">Game data stored on your device</a></li>
+    <li><a href="#en-ads">Advertising (Google AdMob)</a></li>
+    <li><a href="#en-consent">Consent and ad choices</a></li>
+    <li><a href="#en-analytics">Analytics and crash reports (Firebase)</a></li>
+    <li><a href="#en-purchases">Purchases (Google Play Billing)</a></li>
+    <li><a href="#en-notifications">Local notifications</a></li>
+    <li><a href="#en-sharing">Sharing and rating</a></li>
+    <li><a href="#en-retention">Retention and deletion</a></li>
+    <li><a href="#en-children">Children</a></li>
+    <li><a href="#en-rights">Your rights</a></li>
+    <li><a href="#en-changes">Changes</a></li>
+    <li><a href="#en-contact">Contact</a></li>
   </ol>
 </nav>
-
-<h2 id="summary">1. Summary</h2>
+<h2 id="en-summary">1. Summary</h2>
 <div class="note">
   <ul>
     <li>Jewelock is an offline block puzzle. There is no account, no sign-in, and we run no servers of our own.</li>
@@ -84,11 +92,9 @@
     <li>We do not sell personal data, and we do not share it with anyone other than the Google services named here.</li>
   </ul>
 </div>
-
-<h2 id="device-data">2. Game data stored on your device</h2>
+<h2 id="en-device-data">2. Game data stored on your device</h2>
 <p>The game keeps the following only in its private storage on your device: best score, games played, daily streak, daily-challenge results, collected theme pieces and unlocked themes, power-up inventory, the state of an unfinished game, your language, sound and vibration settings, the dates of the daily wheel and reward, and a record of which purchases were applied. None of this is uploaded by us. It is removed when you uninstall the app or clear its storage.</p>
-
-<h2 id="ads">3. Advertising (Google AdMob)</h2>
+<h2 id="en-ads">3. Advertising (Google AdMob)</h2>
 <p>Jewelock uses the Google Mobile Ads SDK (AdMob) to show ads. Interstitial ads appear only after a game ends, never during play, and never in your first games. Reward videos are shown only when you tap a button that offers them (continue after a full tray, an extra wheel spin, doubling the daily reward, a free power-up).</p>
 <ul>
   <li><strong>What the SDK processes.</strong> According to Google's documentation, the Mobile Ads SDK collects and shares with Google: your IP address (which can indicate an approximate location), your device's advertising ID and app set ID, product interactions (app launches, taps, video views) and diagnostics (such as launch time and crash rate). We do not add any personal information of our own.</li>
@@ -96,75 +102,63 @@
   <li><strong>Who.</strong> Google LLC and, through Google's advertising network, its ad-technology partners. Google's own policy applies: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> and <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>.</li>
   <li><strong>Remove Ads.</strong> If you buy "Remove Ads", interstitial ads stop. Reward videos remain available because you choose them; the SDK stays installed for that.</li>
 </ul>
-
-<h2 id="consent">4. Consent and ad choices</h2>
+<h2 id="en-consent">4. Consent and ad choices</h2>
 <p>In the European Economic Area, the United Kingdom and Switzerland the game shows Google's consent form (User Messaging Platform) before any ad is requested. You can decline personalised ads; the game then requests non-personalised ads only. You can change your choice at any time in <em>Settings → Ad consent settings</em>. You can also reset or delete your advertising ID in your device's Google settings ("Ads"), which limits ad personalisation for all apps.</p>
-
-<h2 id="analytics">5. Analytics and crash reports (Firebase)</h2>
+<h2 id="en-analytics">5. Analytics and crash reports (Firebase)</h2>
 <ul>
   <li><strong>Firebase Analytics</strong> records gameplay events — for example that a game started or ended, the score, lines cleared, a reward video was watched, a product was viewed or bought, a wheel spin or chest reward — together with Google's standard data: an app-instance ID, device model, operating-system version, language, country derived from the IP address and app version. We use this to understand how the game is played and to see whether ads and purchases fail.</li>
   <li><strong>Firebase Crashlytics</strong> sends a report when the game crashes: a stack trace, device model, OS version, app version, free memory/storage and a Crashlytics installation ID.</li>
   <li>Neither contains your name, e-mail, contacts or anything you typed. We set no user ID of our own. Firebase processes this data for us as a service provider; its handling is described at <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</li>
 </ul>
-
-<h2 id="purchases">6. Purchases (Google Play Billing)</h2>
+<h2 id="en-purchases">6. Purchases (Google Play Billing)</h2>
 <p>Power-up packs, themes, the starter pack and "Remove Ads" are sold through Google Play. Google processes the payment and shows you its receipt; we never receive your card or bank details. The app only receives a purchase token to unlock the item and keeps a note of the purchase on your device so it can be restored. Prices are shown in your local currency by Google Play. The daily wheel and the surprise chest are never sold for money and involve no real-money gambling; their reward odds are shown in <em>Settings → Reward odds</em>. Google Play's terms and privacy policy apply to payments.</p>
-
-<h2 id="notifications">7. Local notifications</h2>
+<h2 id="en-notifications">7. Local notifications</h2>
 <p>If you allow notifications, the game can remind you once a day about your streak or the daily challenge. These reminders are scheduled on your device by the app itself; no push service and no server is involved, and nothing is sent anywhere. You can turn them off in <em>Settings → Daily reminder</em> or in Android's notification settings.</p>
-
-<h2 id="sharing">8. Sharing and rating</h2>
+<h2 id="en-sharing">8. Sharing and rating</h2>
 <p>When you choose Share, the game creates a score picture or text on your device and opens Android's share sheet; what you share goes only to the app you pick. "Rate us" opens Google Play's in-app rating dialog or the store page; Google handles the review.</p>
-
-<h2 id="retention">9. Retention and deletion</h2>
+<h2 id="en-retention">9. Retention and deletion</h2>
 <ul>
   <li><strong>On your device:</strong> game data stays until you uninstall the app or clear its storage.</li>
   <li><strong>Firebase:</strong> analytics event data is kept by Google for up to 2 months, crash reports for 90 days, as configured in our Firebase project.</li>
   <li><strong>AdMob:</strong> advertising data is retained by Google under its own policies; you can reset your advertising ID at any time.</li>
   <li><strong>Deletion requests:</strong> we hold no account and no data on our own servers, so there is no profile we could delete. If you write to us with your Firebase app-instance ID or Crashlytics installation ID (both are only visible in debugging tools) we will ask Google to delete the matching analytics data.</li>
 </ul>
-
-<h2 id="children">10. Children</h2>
+<h2 id="en-children">10. Children</h2>
 <p>Jewelock is intended for a general audience and is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has used the game and data was processed, contact us and we will help.</p>
-
-<h2 id="rights">11. Your rights</h2>
+<h2 id="en-rights">11. Your rights</h2>
 <p>Depending on where you live (for example under the GDPR in the EEA/UK or the KVKK in Türkiye) you may have the right to access, correct, delete or restrict the processing of personal data, to object to processing, and to complain to a supervisory authority. Because the game stores its data on your device and the only off-device processing is done by Google's SDKs, most of these rights can be exercised directly: uninstall the app, reset the advertising ID, or use the ad-choices form. For anything else, write to the address below.</p>
-
-<h2 id="changes">12. Changes</h2>
+<h2 id="en-changes">12. Changes</h2>
 <p>We will update this page when the game's data practices change and show the effective date at the top. The current version is always at this address.</p>
-
-<h2 id="contact">13. Contact</h2>
+<h2 id="en-contact">13. Contact</h2>
 <p>VR Moby · <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
 </section>
 
-<section id="tr" class="tr" lang="tr">
+<section id="tr" class="policy" lang="tr">
 <header>
   <h1>Jewelock — Gizlilik Politikası</h1>
   <p class="meta">Yürürlük tarihi: 14 Ekim 2026</p>
   <p class="meta">Geliştirici: VR Moby · İletişim: <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
   <p class="meta">Uygulama: Jewelock: Blok Bulmaca (Android, paket <code>com.vrmoby.jewelock</code>)</p>
 </header>
-
 <nav aria-label="İçindekiler">
   <p>İçindekiler</p>
   <ol>
-    <li><a href="#tr-ozet">Özet</a></li>
-    <li><a href="#tr-cihaz">Cihazda saklanan oyun verileri</a></li>
-    <li><a href="#tr-reklam">Reklamlar (Google AdMob)</a></li>
-    <li><a href="#tr-onay">Onay ve reklam tercihleri</a></li>
-    <li><a href="#tr-analitik">Analitik ve çökme raporları (Firebase)</a></li>
-    <li><a href="#tr-satinalma">Satın almalar (Google Play Faturalandırma)</a></li>
-    <li><a href="#tr-bildirim">Yerel bildirimler</a></li>
-    <li><a href="#tr-paylasim">Paylaşma ve değerlendirme</a></li>
-    <li><a href="#tr-saklama">Saklama ve silme</a></li>
-    <li><a href="#tr-cocuklar">Çocuklar</a></li>
-    <li><a href="#tr-haklar">Haklarınız</a></li>
-    <li><a href="#tr-degisiklik">Değişiklikler</a></li>
-    <li><a href="#tr-iletisim">İletişim</a></li>
+    <li><a href="#tr-summary">Özet</a></li>
+    <li><a href="#tr-device-data">Cihazda saklanan oyun verileri</a></li>
+    <li><a href="#tr-ads">Reklamlar (Google AdMob)</a></li>
+    <li><a href="#tr-consent">Onay ve reklam tercihleri</a></li>
+    <li><a href="#tr-analytics">Analitik ve çökme raporları (Firebase)</a></li>
+    <li><a href="#tr-purchases">Satın almalar (Google Play Faturalandırma)</a></li>
+    <li><a href="#tr-notifications">Yerel bildirimler</a></li>
+    <li><a href="#tr-sharing">Paylaşma ve değerlendirme</a></li>
+    <li><a href="#tr-retention">Saklama ve silme</a></li>
+    <li><a href="#tr-children">Çocuklar</a></li>
+    <li><a href="#tr-rights">Haklarınız</a></li>
+    <li><a href="#tr-changes">Değişiklikler</a></li>
+    <li><a href="#tr-contact">İletişim</a></li>
   </ol>
 </nav>
-
-<h2 id="tr-ozet">1. Özet</h2>
+<h2 id="tr-summary">1. Özet</h2>
 <div class="note">
   <ul>
     <li>Jewelock çevrimdışı bir blok bulmaca oyunudur. Hesap ve giriş yoktur; kendi sunucumuz yoktur.</li>
@@ -175,11 +169,9 @@
     <li>Kişisel verileri satmayız ve burada adı geçen Google hizmetleri dışında kimseyle paylaşmayız.</li>
   </ul>
 </div>
-
-<h2 id="tr-cihaz">2. Cihazda saklanan oyun verileri</h2>
+<h2 id="tr-device-data">2. Cihazda saklanan oyun verileri</h2>
 <p>Oyun şunları yalnızca cihazınızdaki özel depolama alanında tutar: en iyi skor, oynanan oyun sayısı, günlük seri, günlük meydan okuma sonuçları, toplanan tema parçaları ve açılan temalar, güçlendirici envanteri, yarım kalan oyunun durumu, dil, ses ve titreşim ayarları, günlük çark ve ödül tarihleri ile hangi satın almaların uygulandığı. Bunların hiçbiri bizim tarafımızdan yüklenmez. Uygulamayı kaldırdığınızda veya depolamasını temizlediğinizde silinir.</p>
-
-<h2 id="tr-reklam">3. Reklamlar (Google AdMob)</h2>
+<h2 id="tr-ads">3. Reklamlar (Google AdMob)</h2>
 <p>Jewelock reklam göstermek için Google Mobile Ads SDK'sını (AdMob) kullanır. Geçiş reklamları yalnızca bir oyun bittiğinde çıkar; oyun sırasında ve ilk oyunlarınızda hiç çıkmaz. Ödüllü videolar yalnızca bunu sunan bir düğmeye dokunduğunuzda gösterilir (tepsi dolunca devam etme, ek çark çevirme, günlük ödülü ikiye katlama, ücretsiz güçlendirici).</p>
 <ul>
   <li><strong>SDK'nın işlediği veriler.</strong> Google'ın belgelerine göre Mobile Ads SDK şunları toplar ve Google ile paylaşır: IP adresiniz (yaklaşık konumu gösterebilir), cihazınızın reklam kimliği ve uygulama seti kimliği, ürün etkileşimleri (uygulama açılışı, dokunmalar, video izlemeleri) ve tanılama bilgileri (açılış süresi, çökme oranı gibi). Biz bunlara kendi kişisel bilginizi eklemeyiz.</li>
@@ -187,50 +179,304 @@
   <li><strong>Kim.</strong> Google LLC ve Google'ın reklam ağı üzerinden reklam teknolojisi ortakları. Google'ın kendi politikası geçerlidir: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> ve <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>.</li>
   <li><strong>Reklamları Kaldır.</strong> "Reklamları Kaldır" ürününü alırsanız geçiş reklamları durur. Ödüllü videolar sizin seçiminiz olduğu için kullanılabilir kalır; SDK bunun için yüklü kalır.</li>
 </ul>
-
-<h2 id="tr-onay">4. Onay ve reklam tercihleri</h2>
+<h2 id="tr-consent">4. Onay ve reklam tercihleri</h2>
 <p>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de oyun, herhangi bir reklam istemeden önce Google'ın onay formunu (User Messaging Platform) gösterir. Kişiselleştirilmiş reklamları reddedebilirsiniz; oyun bu durumda yalnızca kişiselleştirilmemiş reklam ister. Tercihinizi dilediğiniz zaman <em>Ayarlar → Reklam onayı</em> bölümünden değiştirebilirsiniz. Ayrıca cihazınızın Google ayarlarından ("Reklamlar") reklam kimliğinizi sıfırlayabilir veya silebilirsiniz; bu, tüm uygulamalar için reklam kişiselleştirmesini sınırlar.</p>
-
-<h2 id="tr-analitik">5. Analitik ve çökme raporları (Firebase)</h2>
+<h2 id="tr-analytics">5. Analitik ve çökme raporları (Firebase)</h2>
 <ul>
   <li><strong>Firebase Analytics</strong> oyun olaylarını kaydeder — örneğin bir oyunun başladığı veya bittiği, skor, temizlenen çizgiler, bir ödüllü videonun izlendiği, bir ürünün görüntülendiği veya satın alındığı, bir çark çevirmesi veya sandık ödülü — ve Google'ın standart verileriyle birlikte gönderir: uygulama örneği kimliği, cihaz modeli, işletim sistemi sürümü, dil, IP adresinden türetilen ülke ve uygulama sürümü. Bunu oyunun nasıl oynandığını anlamak ve reklam/satın alma hatalarını görmek için kullanırız.</li>
   <li><strong>Firebase Crashlytics</strong> oyun çöktüğünde bir rapor gönderir: yığın izi, cihaz modeli, işletim sistemi sürümü, uygulama sürümü, boş bellek/depolama ve bir Crashlytics kurulum kimliği.</li>
   <li>Hiçbiri adınızı, e-postanızı, kişilerinizi veya yazdığınız bir şeyi içermez. Kendi kullanıcı kimliğimizi atamayız. Firebase bu veriyi bizim adımıza hizmet sağlayıcı olarak işler; ayrıntılar: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</li>
 </ul>
-
-<h2 id="tr-satinalma">6. Satın almalar (Google Play Faturalandırma)</h2>
+<h2 id="tr-purchases">6. Satın almalar (Google Play Faturalandırma)</h2>
 <p>Güçlendirici paketleri, temalar, başlangıç paketi ve "Reklamları Kaldır" Google Play üzerinden satılır. Ödemeyi Google işler ve makbuzunu size gösterir; kart veya banka bilgilerinizi hiçbir zaman almayız. Uygulama yalnızca ürünü açmak için bir satın alma belirteci alır ve geri yükleyebilmek için satın almayı cihazınızda not eder. Fiyatlar Google Play tarafından yerel para biriminizde gösterilir. Günlük çark ve sürpriz sandık hiçbir zaman parayla satılmaz ve gerçek paralı kumar içermez; ödül oranları <em>Ayarlar → Ödül oranları</em> bölümünde gösterilir. Ödemelerde Google Play'in koşulları ve gizlilik politikası geçerlidir.</p>
-
-<h2 id="tr-bildirim">7. Yerel bildirimler</h2>
+<h2 id="tr-notifications">7. Yerel bildirimler</h2>
 <p>Bildirimlere izin verirseniz oyun günde en fazla bir kez serinizi veya günlük meydan okumayı hatırlatabilir. Bu hatırlatmalar uygulamanın kendisi tarafından cihazınızda zamanlanır; bir push hizmeti veya sunucu yoktur, hiçbir yere bir şey gönderilmez. <em>Ayarlar → Günlük hatırlatma</em> bölümünden veya Android bildirim ayarlarından kapatabilirsiniz.</p>
-
-<h2 id="tr-paylasim">8. Paylaşma ve değerlendirme</h2>
+<h2 id="tr-sharing">8. Paylaşma ve değerlendirme</h2>
 <p>Paylaş'ı seçtiğinizde oyun cihazınızda bir skor görseli veya metni oluşturur ve Android paylaşım menüsünü açar; paylaştığınız şey yalnızca seçtiğiniz uygulamaya gider. "Bizi değerlendir" Google Play'in uygulama içi değerlendirme penceresini veya mağaza sayfasını açar; değerlendirmeyi Google yürütür.</p>
-
-<h2 id="tr-saklama">9. Saklama ve silme</h2>
+<h2 id="tr-retention">9. Saklama ve silme</h2>
 <ul>
   <li><strong>Cihazınızda:</strong> oyun verileri uygulamayı kaldırana veya depolamasını temizleyene kadar kalır.</li>
   <li><strong>Firebase:</strong> analitik olay verileri Firebase projemizde ayarlandığı üzere Google'da en fazla 2 ay, çökme raporları 90 gün saklanır.</li>
   <li><strong>AdMob:</strong> reklam verileri Google'ın kendi politikalarına göre saklanır; reklam kimliğinizi dilediğiniz zaman sıfırlayabilirsiniz.</li>
   <li><strong>Silme talepleri:</strong> hesabımız ve kendi sunucularımızda verimiz olmadığından silebileceğimiz bir profil yoktur. Firebase uygulama örneği kimliğinizi veya Crashlytics kurulum kimliğinizi (ikisi de yalnızca hata ayıklama araçlarında görünür) bize yazarsanız eşleşen analitik verilerinin silinmesini Google'dan isteriz.</li>
 </ul>
-
-<h2 id="tr-cocuklar">10. Çocuklar</h2>
+<h2 id="tr-children">10. Çocuklar</h2>
 <p>Jewelock genel kitleye yöneliktir ve 13 yaş altı çocuklara hitap etmez. Çocuklardan bilerek kişisel bilgi toplamayız. Bir çocuğun oyunu kullandığını ve veri işlendiğini düşünüyorsanız bize yazın, yardımcı oluruz.</p>
-
-<h2 id="tr-haklar">11. Haklarınız</h2>
+<h2 id="tr-rights">11. Haklarınız</h2>
 <p>Yaşadığınız yere göre (örneğin AEA/BK'de GDPR, Türkiye'de KVKK kapsamında) kişisel verilerinize erişme, düzeltme, silme, işlemeyi kısıtlama, itiraz etme ve denetim makamına şikâyet etme hakkınız olabilir. Oyun verilerini cihazınızda sakladığı ve cihaz dışındaki tek işleme Google SDK'ları tarafından yapıldığı için bu hakların çoğunu doğrudan kullanabilirsiniz: uygulamayı kaldırın, reklam kimliğini sıfırlayın veya reklam tercihleri formunu kullanın. Diğer her şey için aşağıdaki adrese yazın.</p>
-
-<h2 id="tr-degisiklik">12. Değişiklikler</h2>
+<h2 id="tr-changes">12. Değişiklikler</h2>
 <p>Oyunun veri uygulamaları değiştiğinde bu sayfayı güncelleyip yürürlük tarihini üstte gösteririz. Güncel sürüm her zaman bu adrestedir.</p>
-
-<h2 id="tr-iletisim">13. İletişim</h2>
+<h2 id="tr-contact">13. İletişim</h2>
 <p>VR Moby · <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
 </section>
 
+<section id="de" class="policy" lang="de">
+<header>
+  <h1>Jewelock — Datenschutzerklärung</h1>
+  <p class="meta">Gültig ab: 14. Oktober 2026</p>
+  <p class="meta">Entwickler: VR Moby · Kontakt: <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
+  <p class="meta">App: Jewelock: Block-Puzzle (Android, Paket <code>com.vrmoby.jewelock</code>)</p>
+</header>
+<nav aria-label="Inhalt">
+  <p>Inhalt</p>
+  <ol>
+    <li><a href="#de-summary">Zusammenfassung</a></li>
+    <li><a href="#de-device-data">Auf deinem Gerät gespeicherte Spieldaten</a></li>
+    <li><a href="#de-ads">Werbung (Google AdMob)</a></li>
+    <li><a href="#de-consent">Einwilligung und Werbeeinstellungen</a></li>
+    <li><a href="#de-analytics">Analyse und Absturzberichte (Firebase)</a></li>
+    <li><a href="#de-purchases">Käufe (Google Play Billing)</a></li>
+    <li><a href="#de-notifications">Lokale Benachrichtigungen</a></li>
+    <li><a href="#de-sharing">Teilen und Bewerten</a></li>
+    <li><a href="#de-retention">Aufbewahrung und Löschung</a></li>
+    <li><a href="#de-children">Kinder</a></li>
+    <li><a href="#de-rights">Deine Rechte</a></li>
+    <li><a href="#de-changes">Änderungen</a></li>
+    <li><a href="#de-contact">Kontakt</a></li>
+  </ol>
+</nav>
+<h2 id="de-summary">1. Zusammenfassung</h2>
+<div class="note">
+  <ul>
+    <li>Jewelock ist ein Offline-Blockpuzzle. Es gibt kein Konto, keine Anmeldung, und wir betreiben keine eigenen Server.</li>
+    <li>Deine Punkte, Serie, Sammlung, dein Inventar und deine Einstellungen werden nur auf deinem Gerät gespeichert.</li>
+    <li>Das Spiel zeigt Werbung von Google AdMob (eine Interstitial-Anzeige nach manchen Spielen und Belohnungsvideos, die du selbst auswählst). Um Werbung anzuzeigen, verarbeitet Googles Werbesoftware Daten wie die Werbe-ID und die IP-Adresse deines Geräts. Abschnitt 3 erklärt das.</li>
+    <li>Googles Firebase Analytics und Crashlytics senden grundlegende Nutzungsstatistiken und Absturzberichte an Google, damit wir sehen, wie das Spiel gespielt wird, und Abstürze beheben können. Sie enthalten nie deinen Namen oder deine Kontaktdaten. Abschnitt 5 erklärt das.</li>
+    <li>Käufe werden von Google Play abgewickelt. Wir sehen deine Zahlungsdaten nie.</li>
+    <li>Wir verkaufen keine personenbezogenen Daten und geben sie an niemanden außer den hier genannten Google-Diensten weiter.</li>
+  </ul>
+</div>
+<h2 id="de-device-data">2. Auf deinem Gerät gespeicherte Spieldaten</h2>
+<p>Das Spiel speichert Folgendes ausschließlich im privaten Speicher auf deinem Gerät: Bestwert, gespielte Spiele, Tagesserie, Ergebnisse der täglichen Herausforderung, gesammelte Themenstücke und freigeschaltete Themen, Power-up-Inventar, den Stand eines unfertigen Spiels, deine Sprache, Ton- und Vibrationseinstellungen, die Daten von Tagesrad und Tagesbelohnung sowie einen Vermerk, welche Käufe angewendet wurden. Nichts davon wird von uns hochgeladen. Es wird entfernt, wenn du die App deinstallierst oder ihren Speicher löschst.</p>
+<h2 id="de-ads">3. Werbung (Google AdMob)</h2>
+<p>Jewelock verwendet das Google Mobile Ads SDK (AdMob), um Werbung anzuzeigen. Interstitial-Anzeigen erscheinen nur nach dem Ende eines Spiels, nie während des Spielens und nie in deinen ersten Spielen. Belohnungsvideos werden nur gezeigt, wenn du auf eine Schaltfläche tippst, die sie anbietet (Weiterspielen bei vollem Tablett, eine zusätzliche Rad-Drehung, Verdoppeln der Tagesbelohnung, ein kostenloses Power-up).</p>
+<ul>
+  <li><strong>Was das SDK verarbeitet.</strong> Laut Googles Dokumentation erhebt das Mobile Ads SDK und teilt mit Google: deine IP-Adresse (die einen ungefähren Standort anzeigen kann), die Werbe-ID und App-Set-ID deines Geräts, Produktinteraktionen (App-Starts, Tipps, Videoaufrufe) und Diagnosedaten (etwa Startzeit und Absturzrate). Wir fügen keine eigenen personenbezogenen Informationen hinzu.</li>
+  <li><strong>Warum.</strong> Um Werbung anzuzeigen, zu messen, Betrug zu verhindern und – sofern du eingewilligt hast – sie zu personalisieren.</li>
+  <li><strong>Wer.</strong> Google LLC und über Googles Werbenetzwerk dessen Werbetechnologie-Partner. Es gilt Googles eigene Richtlinie: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> und <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>.</li>
+  <li><strong>Werbung entfernen.</strong> Wenn du „Werbung entfernen“ kaufst, enden die Interstitial-Anzeigen. Belohnungsvideos bleiben verfügbar, weil du sie selbst auswählst; dafür bleibt das SDK installiert.</li>
+</ul>
+<h2 id="de-consent">4. Einwilligung und Werbeeinstellungen</h2>
+<p>Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz zeigt das Spiel Googles Einwilligungsformular (User Messaging Platform), bevor eine Anzeige angefordert wird. Du kannst personalisierte Werbung ablehnen; das Spiel fordert dann nur nicht personalisierte Werbung an. Du kannst deine Wahl jederzeit unter <em>Einstellungen → Werbeeinwilligung</em> ändern. Außerdem kannst du deine Werbe-ID in den Google-Einstellungen deines Geräts („Werbung“) zurücksetzen oder löschen, was die Werbepersonalisierung für alle Apps einschränkt.</p>
+<h2 id="de-analytics">5. Analyse und Absturzberichte (Firebase)</h2>
+<ul>
+  <li><strong>Firebase Analytics</strong> zeichnet Spielereignisse auf – zum Beispiel dass ein Spiel begonnen oder beendet wurde, die Punktzahl, geräumte Linien, dass ein Belohnungsvideo angesehen, ein Produkt angesehen oder gekauft wurde, eine Rad-Drehung oder eine Kistenbelohnung – zusammen mit Googles Standarddaten: einer App-Instanz-ID, Gerätemodell, Betriebssystemversion, Sprache, aus der IP-Adresse abgeleitetem Land und App-Version. Wir nutzen das, um zu verstehen, wie das Spiel gespielt wird, und um zu sehen, ob Werbung und Käufe fehlschlagen.</li>
+  <li><strong>Firebase Crashlytics</strong> sendet einen Bericht, wenn das Spiel abstürzt: einen Stack-Trace, Gerätemodell, OS-Version, App-Version, freien Speicher und eine Crashlytics-Installations-ID.</li>
+  <li>Keines davon enthält deinen Namen, deine E-Mail, deine Kontakte oder etwas, das du eingegeben hast. Wir setzen keine eigene Nutzer-ID. Firebase verarbeitet diese Daten für uns als Dienstleister; die Handhabung ist unter <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a> beschrieben.</li>
+</ul>
+<h2 id="de-purchases">6. Käufe (Google Play Billing)</h2>
+<p>Power-up-Pakete, Themen, das Starterpaket und „Werbung entfernen“ werden über Google Play verkauft. Google wickelt die Zahlung ab und zeigt dir seinen Beleg; wir erhalten nie deine Karten- oder Bankdaten. Die App erhält nur ein Kauf-Token, um den Artikel freizuschalten, und vermerkt den Kauf auf deinem Gerät, damit er wiederhergestellt werden kann. Preise zeigt Google Play in deiner lokalen Währung an. Das Tagesrad und die Überraschungskiste werden nie für Geld verkauft und beinhalten kein Echtgeld-Glücksspiel; ihre Gewinnchancen werden unter <em>Einstellungen → Gewinnchancen</em> angezeigt. Für Zahlungen gelten die Bedingungen und die Datenschutzerklärung von Google Play.</p>
+<h2 id="de-notifications">7. Lokale Benachrichtigungen</h2>
+<p>Wenn du Benachrichtigungen erlaubst, kann dich das Spiel einmal am Tag an deine Serie oder die tägliche Herausforderung erinnern. Diese Erinnerungen plant die App selbst auf deinem Gerät; es ist kein Push-Dienst und kein Server beteiligt, und nichts wird irgendwohin gesendet. Du kannst sie unter <em>Einstellungen → Tägliche Erinnerung</em> oder in den Android-Benachrichtigungseinstellungen abschalten.</p>
+<h2 id="de-sharing">8. Teilen und Bewerten</h2>
+<p>Wenn du Teilen wählst, erstellt das Spiel ein Punktebild oder einen Text auf deinem Gerät und öffnet das Android-Teilen-Menü; was du teilst, geht nur an die App, die du auswählst. „Bewerte uns“ öffnet den In-App-Bewertungsdialog von Google Play oder die Store-Seite; Google verarbeitet die Bewertung.</p>
+<h2 id="de-retention">9. Aufbewahrung und Löschung</h2>
+<ul>
+  <li><strong>Auf deinem Gerät:</strong> Spieldaten bleiben, bis du die App deinstallierst oder ihren Speicher löschst.</li>
+  <li><strong>Firebase:</strong> Analyse-Ereignisdaten werden von Google bis zu 2 Monate, Absturzberichte 90 Tage aufbewahrt, wie in unserem Firebase-Projekt eingestellt.</li>
+  <li><strong>AdMob:</strong> Werbedaten werden von Google nach dessen eigenen Richtlinien aufbewahrt; du kannst deine Werbe-ID jederzeit zurücksetzen.</li>
+  <li><strong>Löschanfragen:</strong> Wir haben kein Konto und keine Daten auf eigenen Servern, also gibt es kein Profil, das wir löschen könnten. Wenn du uns mit deiner Firebase-App-Instanz-ID oder Crashlytics-Installations-ID schreibst (beide sind nur in Debugging-Werkzeugen sichtbar), bitten wir Google, die passenden Analysedaten zu löschen.</li>
+</ul>
+<h2 id="de-children">10. Kinder</h2>
+<p>Jewelock richtet sich an ein allgemeines Publikum und nicht an Kinder unter 13 Jahren. Wir erheben wissentlich keine personenbezogenen Daten von Kindern. Wenn du glaubst, dass ein Kind das Spiel genutzt hat und Daten verarbeitet wurden, kontaktiere uns – wir helfen.</p>
+<h2 id="de-rights">11. Deine Rechte</h2>
+<p>Je nachdem, wo du lebst (zum Beispiel nach der DSGVO im EWR/UK oder dem KVKK in der Türkei), hast du möglicherweise das Recht auf Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung personenbezogener Daten, auf Widerspruch gegen die Verarbeitung und auf Beschwerde bei einer Aufsichtsbehörde. Da das Spiel seine Daten auf deinem Gerät speichert und die einzige Verarbeitung außerhalb des Geräts durch Googles SDKs erfolgt, lassen sich die meisten dieser Rechte direkt ausüben: die App deinstallieren, die Werbe-ID zurücksetzen oder das Werbeeinstellungs-Formular nutzen. Für alles andere schreibe an die untenstehende Adresse.</p>
+<h2 id="de-changes">12. Änderungen</h2>
+<p>Wir aktualisieren diese Seite, wenn sich die Datenpraktiken des Spiels ändern, und zeigen das Gültigkeitsdatum oben an. Die aktuelle Fassung ist immer unter dieser Adresse zu finden.</p>
+<h2 id="de-contact">13. Kontakt</h2>
+<p>VR Moby · <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
+</section>
+
+<section id="es" class="policy" lang="es">
+<header>
+  <h1>Jewelock — Política de privacidad</h1>
+  <p class="meta">Fecha de entrada en vigor: 14 de octubre de 2026</p>
+  <p class="meta">Desarrollador: VR Moby · Contacto: <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
+  <p class="meta">Aplicación: Jewelock: Puzle de Bloques (Android, paquete <code>com.vrmoby.jewelock</code>)</p>
+</header>
+<nav aria-label="Contenido">
+  <p>Contenido</p>
+  <ol>
+    <li><a href="#es-summary">Resumen</a></li>
+    <li><a href="#es-device-data">Datos del juego guardados en tu dispositivo</a></li>
+    <li><a href="#es-ads">Publicidad (Google AdMob)</a></li>
+    <li><a href="#es-consent">Consentimiento y opciones de anuncios</a></li>
+    <li><a href="#es-analytics">Analítica e informes de fallos (Firebase)</a></li>
+    <li><a href="#es-purchases">Compras (Google Play Billing)</a></li>
+    <li><a href="#es-notifications">Notificaciones locales</a></li>
+    <li><a href="#es-sharing">Compartir y valorar</a></li>
+    <li><a href="#es-retention">Conservación y eliminación</a></li>
+    <li><a href="#es-children">Menores</a></li>
+    <li><a href="#es-rights">Tus derechos</a></li>
+    <li><a href="#es-changes">Cambios</a></li>
+    <li><a href="#es-contact">Contacto</a></li>
+  </ol>
+</nav>
+<h2 id="es-summary">1. Resumen</h2>
+<div class="note">
+  <ul>
+    <li>Jewelock es un puzle de bloques sin conexión. No hay cuenta, ni inicio de sesión, y no operamos servidores propios.</li>
+    <li>Tus puntuaciones, racha, colección, inventario y ajustes se guardan solo en tu dispositivo.</li>
+    <li>El juego muestra anuncios de Google AdMob (un intersticial después de algunas partidas y vídeos con recompensa que tú eliges ver). Para mostrar anuncios, el software publicitario de Google procesa datos como el ID de publicidad y la dirección IP de tu dispositivo. La sección 3 lo explica.</li>
+    <li>Firebase Analytics y Crashlytics de Google envían estadísticas básicas de uso e informes de fallos a Google para que podamos ver cómo se juega y corregir fallos. Nunca contienen tu nombre ni tus datos de contacto. La sección 5 lo explica.</li>
+    <li>Las compras las gestiona Google Play. Nunca vemos tus datos de pago.</li>
+    <li>No vendemos datos personales ni los compartimos con nadie salvo los servicios de Google aquí nombrados.</li>
+  </ul>
+</div>
+<h2 id="es-device-data">2. Datos del juego guardados en tu dispositivo</h2>
+<p>El juego guarda lo siguiente únicamente en su almacenamiento privado en tu dispositivo: mejor puntuación, partidas jugadas, racha diaria, resultados del desafío diario, piezas de tema reunidas y temas desbloqueados, inventario de potenciadores, el estado de una partida sin terminar, tu idioma, los ajustes de sonido y vibración, las fechas de la rueda y la recompensa diarias, y un registro de qué compras se aplicaron. Nada de esto lo subimos nosotros. Se elimina al desinstalar la aplicación o borrar su almacenamiento.</p>
+<h2 id="es-ads">3. Publicidad (Google AdMob)</h2>
+<p>Jewelock usa el SDK de Google Mobile Ads (AdMob) para mostrar anuncios. Los anuncios intersticiales aparecen solo al terminar una partida, nunca durante el juego y nunca en tus primeras partidas. Los vídeos con recompensa se muestran solo cuando tocas un botón que los ofrece (continuar con la bandeja llena, un giro extra de la rueda, duplicar la recompensa diaria, un potenciador gratis).</p>
+<ul>
+  <li><strong>Qué procesa el SDK.</strong> Según la documentación de Google, el SDK de Mobile Ads recopila y comparte con Google: tu dirección IP (que puede indicar una ubicación aproximada), el ID de publicidad y el ID de conjunto de aplicaciones de tu dispositivo, interacciones con el producto (aperturas de la aplicación, toques, visualizaciones de vídeo) y diagnósticos (como el tiempo de inicio y la tasa de fallos). No añadimos información personal propia.</li>
+  <li><strong>Por qué.</strong> Para mostrar anuncios, medirlos, prevenir el fraude y, si has dado tu consentimiento, personalizarlos.</li>
+  <li><strong>Quién.</strong> Google LLC y, a través de la red publicitaria de Google, sus socios de tecnología publicitaria. Se aplica la propia política de Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> y <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>.</li>
+  <li><strong>Quitar anuncios.</strong> Si compras «Quitar anuncios», los intersticiales dejan de aparecer. Los vídeos con recompensa siguen disponibles porque los eliges tú; el SDK permanece instalado para ello.</li>
+</ul>
+<h2 id="es-consent">4. Consentimiento y opciones de anuncios</h2>
+<p>En el Espacio Económico Europeo, el Reino Unido y Suiza, el juego muestra el formulario de consentimiento de Google (User Messaging Platform) antes de solicitar cualquier anuncio. Puedes rechazar los anuncios personalizados; el juego entonces solicita solo anuncios no personalizados. Puedes cambiar tu elección en cualquier momento en <em>Ajustes → Consentimiento de anuncios</em>. También puedes restablecer o eliminar tu ID de publicidad en los ajustes de Google de tu dispositivo («Anuncios»), lo que limita la personalización de anuncios para todas las aplicaciones.</p>
+<h2 id="es-analytics">5. Analítica e informes de fallos (Firebase)</h2>
+<ul>
+  <li><strong>Firebase Analytics</strong> registra eventos de juego —por ejemplo, que una partida empezó o terminó, la puntuación, las líneas despejadas, que se vio un vídeo con recompensa, que se vio o compró un producto, un giro de la rueda o una recompensa del cofre— junto con los datos estándar de Google: un ID de instancia de la aplicación, modelo del dispositivo, versión del sistema operativo, idioma, país derivado de la dirección IP y versión de la aplicación. Lo usamos para entender cómo se juega y para ver si fallan los anuncios y las compras.</li>
+  <li><strong>Firebase Crashlytics</strong> envía un informe cuando el juego se bloquea: un seguimiento de pila, modelo del dispositivo, versión del SO, versión de la aplicación, memoria/almacenamiento libres y un ID de instalación de Crashlytics.</li>
+  <li>Ninguno contiene tu nombre, correo, contactos ni nada que hayas escrito. No asignamos un ID de usuario propio. Firebase procesa estos datos para nosotros como proveedor de servicios; su tratamiento se describe en <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</li>
+</ul>
+<h2 id="es-purchases">6. Compras (Google Play Billing)</h2>
+<p>Los packs de potenciadores, los temas, el pack inicial y «Quitar anuncios» se venden a través de Google Play. Google procesa el pago y te muestra su recibo; nunca recibimos los datos de tu tarjeta o banco. La aplicación solo recibe un token de compra para desbloquear el artículo y guarda una nota de la compra en tu dispositivo para poder restaurarla. Google Play muestra los precios en tu moneda local. La rueda diaria y el cofre sorpresa nunca se venden por dinero ni implican juegos de azar con dinero real; sus probabilidades se muestran en <em>Ajustes → Probabilidades</em>. A los pagos se aplican los términos y la política de privacidad de Google Play.</p>
+<h2 id="es-notifications">7. Notificaciones locales</h2>
+<p>Si permites las notificaciones, el juego puede recordarte una vez al día tu racha o el desafío diario. Estos recordatorios los programa la propia aplicación en tu dispositivo; no interviene ningún servicio push ni servidor, y no se envía nada a ningún sitio. Puedes desactivarlos en <em>Ajustes → Recordatorio diario</em> o en los ajustes de notificaciones de Android.</p>
+<h2 id="es-sharing">8. Compartir y valorar</h2>
+<p>Cuando eliges Compartir, el juego crea una imagen o un texto con tu puntuación en tu dispositivo y abre el menú de compartir de Android; lo que compartes va solo a la aplicación que elijas. «Valóranos» abre el diálogo de valoración dentro de la aplicación de Google Play o la página de la tienda; Google gestiona la reseña.</p>
+<h2 id="es-retention">9. Conservación y eliminación</h2>
+<ul>
+  <li><strong>En tu dispositivo:</strong> los datos del juego permanecen hasta que desinstales la aplicación o borres su almacenamiento.</li>
+  <li><strong>Firebase:</strong> Google conserva los datos de eventos de analítica hasta 2 meses y los informes de fallos 90 días, según la configuración de nuestro proyecto de Firebase.</li>
+  <li><strong>AdMob:</strong> Google conserva los datos publicitarios según sus propias políticas; puedes restablecer tu ID de publicidad en cualquier momento.</li>
+  <li><strong>Solicitudes de eliminación:</strong> no tenemos cuenta ni datos en servidores propios, así que no hay ningún perfil que podamos eliminar. Si nos escribes con tu ID de instancia de la aplicación de Firebase o tu ID de instalación de Crashlytics (ambos solo visibles en herramientas de depuración), pediremos a Google que elimine los datos de analítica correspondientes.</li>
+</ul>
+<h2 id="es-children">10. Menores</h2>
+<p>Jewelock está dirigido a un público general y no a menores de 13 años. No recopilamos a sabiendas información personal de menores. Si crees que un menor ha usado el juego y se han procesado datos, contáctanos y te ayudaremos.</p>
+<h2 id="es-rights">11. Tus derechos</h2>
+<p>Según dónde vivas (por ejemplo, bajo el RGPD en el EEE/Reino Unido o la KVKK en Turquía), puedes tener derecho a acceder, rectificar, eliminar o limitar el tratamiento de los datos personales, a oponerte al tratamiento y a reclamar ante una autoridad de control. Como el juego guarda sus datos en tu dispositivo y el único tratamiento fuera del dispositivo lo realizan los SDK de Google, la mayoría de estos derechos se pueden ejercer directamente: desinstalar la aplicación, restablecer el ID de publicidad o usar el formulario de opciones de anuncios. Para cualquier otra cosa, escribe a la dirección de abajo.</p>
+<h2 id="es-changes">12. Cambios</h2>
+<p>Actualizaremos esta página cuando cambien las prácticas de datos del juego y mostraremos la fecha de entrada en vigor arriba. La versión actual está siempre en esta dirección.</p>
+<h2 id="es-contact">13. Contacto</h2>
+<p>VR Moby · <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
+</section>
+
+<section id="pt" class="policy" lang="pt-BR">
+<header>
+  <h1>Jewelock — Política de Privacidade</h1>
+  <p class="meta">Data de vigência: 14 de outubro de 2026</p>
+  <p class="meta">Desenvolvedor: VR Moby · Contato: <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
+  <p class="meta">Aplicativo: Jewelock: Quebra-Cabeça de Blocos (Android, pacote <code>com.vrmoby.jewelock</code>)</p>
+</header>
+<nav aria-label="Conteúdo">
+  <p>Conteúdo</p>
+  <ol>
+    <li><a href="#pt-summary">Resumo</a></li>
+    <li><a href="#pt-device-data">Dados do jogo armazenados no seu aparelho</a></li>
+    <li><a href="#pt-ads">Publicidade (Google AdMob)</a></li>
+    <li><a href="#pt-consent">Consentimento e opções de anúncios</a></li>
+    <li><a href="#pt-analytics">Análise e relatórios de falhas (Firebase)</a></li>
+    <li><a href="#pt-purchases">Compras (Google Play Billing)</a></li>
+    <li><a href="#pt-notifications">Notificações locais</a></li>
+    <li><a href="#pt-sharing">Compartilhar e avaliar</a></li>
+    <li><a href="#pt-retention">Retenção e exclusão</a></li>
+    <li><a href="#pt-children">Crianças</a></li>
+    <li><a href="#pt-rights">Seus direitos</a></li>
+    <li><a href="#pt-changes">Alterações</a></li>
+    <li><a href="#pt-contact">Contato</a></li>
+  </ol>
+</nav>
+<h2 id="pt-summary">1. Resumo</h2>
+<div class="note">
+  <ul>
+    <li>Jewelock é um quebra-cabeça de blocos offline. Não há conta, nem login, e não operamos servidores próprios.</li>
+    <li>Suas pontuações, sequência, coleção, inventário e configurações ficam armazenados apenas no seu aparelho.</li>
+    <li>O jogo mostra anúncios do Google AdMob (um intersticial depois de algumas partidas e vídeos com recompensa que você escolhe assistir). Para mostrar anúncios, o software de publicidade do Google processa dados como o ID de publicidade e o endereço IP do seu aparelho. A seção 3 explica isso.</li>
+    <li>O Firebase Analytics e o Crashlytics do Google enviam estatísticas básicas de uso e relatórios de falhas ao Google para que possamos ver como o jogo é jogado e corrigir falhas. Eles nunca contêm seu nome ou dados de contato. A seção 5 explica isso.</li>
+    <li>As compras são processadas pelo Google Play. Nunca vemos seus dados de pagamento.</li>
+    <li>Não vendemos dados pessoais e não os compartilhamos com ninguém além dos serviços do Google aqui citados.</li>
+  </ul>
+</div>
+<h2 id="pt-device-data">2. Dados do jogo armazenados no seu aparelho</h2>
+<p>O jogo guarda o seguinte apenas no armazenamento privado do seu aparelho: melhor pontuação, partidas jogadas, sequência diária, resultados do desafio diário, peças de tema coletadas e temas desbloqueados, inventário de reforços, o estado de uma partida inacabada, seu idioma, as configurações de som e vibração, as datas da roda e do prêmio diários, e um registro de quais compras foram aplicadas. Nada disso é enviado por nós. Tudo é removido quando você desinstala o aplicativo ou limpa o armazenamento dele.</p>
+<h2 id="pt-ads">3. Publicidade (Google AdMob)</h2>
+<p>O Jewelock usa o SDK do Google Mobile Ads (AdMob) para mostrar anúncios. Anúncios intersticiais aparecem apenas depois que uma partida termina, nunca durante o jogo e nunca nas suas primeiras partidas. Vídeos com recompensa são mostrados apenas quando você toca em um botão que os oferece (continuar com a bandeja cheia, um giro extra da roda, dobrar o prêmio diário, um reforço grátis).</p>
+<ul>
+  <li><strong>O que o SDK processa.</strong> Segundo a documentação do Google, o SDK do Mobile Ads coleta e compartilha com o Google: seu endereço IP (que pode indicar uma localização aproximada), o ID de publicidade e o ID de conjunto de apps do seu aparelho, interações com o produto (aberturas do app, toques, visualizações de vídeo) e diagnósticos (como tempo de inicialização e taxa de falhas). Não acrescentamos nenhuma informação pessoal própria.</li>
+  <li><strong>Por quê.</strong> Para mostrar anúncios, medi-los, prevenir fraudes e, se você consentiu, personalizá-los.</li>
+  <li><strong>Quem.</strong> Google LLC e, por meio da rede de publicidade do Google, seus parceiros de tecnologia de anúncios. Aplica-se a política do próprio Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> e <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>.</li>
+  <li><strong>Remover anúncios.</strong> Se você comprar "Remover anúncios", os intersticiais param. Os vídeos com recompensa continuam disponíveis porque são escolha sua; o SDK permanece instalado para isso.</li>
+</ul>
+<h2 id="pt-consent">4. Consentimento e opções de anúncios</h2>
+<p>No Espaço Econômico Europeu, no Reino Unido e na Suíça, o jogo mostra o formulário de consentimento do Google (User Messaging Platform) antes de solicitar qualquer anúncio. Você pode recusar anúncios personalizados; o jogo então solicita apenas anúncios não personalizados. Você pode mudar sua escolha a qualquer momento em <em>Configurações → Consentimento de anúncios</em>. Também pode redefinir ou excluir seu ID de publicidade nas configurações do Google do seu aparelho ("Anúncios"), o que limita a personalização de anúncios para todos os apps.</p>
+<h2 id="pt-analytics">5. Análise e relatórios de falhas (Firebase)</h2>
+<ul>
+  <li><strong>Firebase Analytics</strong> registra eventos do jogo — por exemplo, que uma partida começou ou terminou, a pontuação, linhas limpas, que um vídeo com recompensa foi assistido, que um produto foi visto ou comprado, um giro da roda ou um prêmio do baú — junto com os dados padrão do Google: um ID de instância do app, modelo do aparelho, versão do sistema operacional, idioma, país derivado do endereço IP e versão do app. Usamos isso para entender como o jogo é jogado e ver se anúncios e compras falham.</li>
+  <li><strong>Firebase Crashlytics</strong> envia um relatório quando o jogo trava: um stack trace, modelo do aparelho, versão do SO, versão do app, memória/armazenamento livres e um ID de instalação do Crashlytics.</li>
+  <li>Nenhum deles contém seu nome, e-mail, contatos ou qualquer coisa que você digitou. Não definimos um ID de usuário próprio. O Firebase processa esses dados para nós como prestador de serviço; o tratamento está descrito em <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</li>
+</ul>
+<h2 id="pt-purchases">6. Compras (Google Play Billing)</h2>
+<p>Pacotes de reforços, temas, o pacote inicial e "Remover anúncios" são vendidos pelo Google Play. O Google processa o pagamento e mostra o recibo; nunca recebemos os dados do seu cartão ou banco. O app recebe apenas um token de compra para desbloquear o item e guarda uma anotação da compra no seu aparelho para poder restaurá-la. Os preços são mostrados na sua moeda local pelo Google Play. A roda diária e o baú surpresa nunca são vendidos por dinheiro e não envolvem jogos de azar com dinheiro real; as chances de prêmio aparecem em <em>Configurações → Probabilidades</em>. Aos pagamentos aplicam-se os termos e a política de privacidade do Google Play.</p>
+<h2 id="pt-notifications">7. Notificações locais</h2>
+<p>Se você permitir notificações, o jogo pode lembrá-lo uma vez por dia da sua sequência ou do desafio diário. Esses lembretes são agendados no seu aparelho pelo próprio app; não há serviço push nem servidor envolvido, e nada é enviado a lugar nenhum. Você pode desativá-los em <em>Configurações → Lembrete diário</em> ou nas configurações de notificação do Android.</p>
+<h2 id="pt-sharing">8. Compartilhar e avaliar</h2>
+<p>Quando você escolhe Compartilhar, o jogo cria uma imagem ou um texto com a pontuação no seu aparelho e abre o menu de compartilhamento do Android; o que você compartilha vai apenas para o app que você escolher. "Avalie-nos" abre a caixa de avaliação no app do Google Play ou a página da loja; o Google processa a avaliação.</p>
+<h2 id="pt-retention">9. Retenção e exclusão</h2>
+<ul>
+  <li><strong>No seu aparelho:</strong> os dados do jogo permanecem até você desinstalar o app ou limpar o armazenamento dele.</li>
+  <li><strong>Firebase:</strong> os dados de eventos de análise são mantidos pelo Google por até 2 meses e os relatórios de falhas por 90 dias, conforme configurado no nosso projeto do Firebase.</li>
+  <li><strong>AdMob:</strong> os dados de publicidade são retidos pelo Google segundo as políticas dele; você pode redefinir seu ID de publicidade a qualquer momento.</li>
+  <li><strong>Pedidos de exclusão:</strong> não temos conta nem dados em servidores próprios, então não há perfil que possamos excluir. Se você nos escrever com seu ID de instância do app do Firebase ou ID de instalação do Crashlytics (ambos visíveis apenas em ferramentas de depuração), pediremos ao Google que exclua os dados de análise correspondentes.</li>
+</ul>
+<h2 id="pt-children">10. Crianças</h2>
+<p>O Jewelock é destinado ao público geral e não é direcionado a crianças menores de 13 anos. Não coletamos intencionalmente informações pessoais de crianças. Se você acredita que uma criança usou o jogo e dados foram processados, entre em contato e ajudaremos.</p>
+<h2 id="pt-rights">11. Seus direitos</h2>
+<p>Dependendo de onde você mora (por exemplo, sob o GDPR no EEE/Reino Unido ou a KVKK na Turquia), você pode ter o direito de acessar, corrigir, excluir ou restringir o tratamento de dados pessoais, de se opor ao tratamento e de reclamar a uma autoridade supervisora. Como o jogo armazena seus dados no seu aparelho e o único tratamento fora do aparelho é feito pelos SDKs do Google, a maioria desses direitos pode ser exercida diretamente: desinstalar o app, redefinir o ID de publicidade ou usar o formulário de opções de anúncios. Para qualquer outra coisa, escreva para o endereço abaixo.</p>
+<h2 id="pt-changes">12. Alterações</h2>
+<p>Atualizaremos esta página quando as práticas de dados do jogo mudarem e mostraremos a data de vigência no topo. A versão atual está sempre neste endereço.</p>
+<h2 id="pt-contact">13. Contato</h2>
+<p>VR Moby · <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
+</section>
 <footer>
-  <p>© 2026 VR Moby · <a href="#en">English</a> · <a href="#tr">Türkçe</a></p>
+  <p>© 2026 VR Moby · <a href="#en">EN</a> · <a href="#tr">TR</a> · <a href="#de">DE</a> · <a href="#es">ES</a> · <a href="#pt">PT</a></p>
 </footer>
+<script>
+(function () {
+  var langs = ['en', 'tr', 'de', 'es', 'pt'];
+  function fromBrowser() {
+    var list = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < list.length; i++) {
+      var c = String(list[i]).toLowerCase().slice(0, 2);
+      if (langs.indexOf(c) >= 0) return c;
+    }
+    return 'en';
+  }
+  function pick() {
+    var h = location.hash.replace('#', '');
+    var target = h.split('-')[0];
+    return langs.indexOf(target) >= 0 ? target : fromBrowser();
+  }
+  function show(lang) {
+    langs.forEach(function (l) {
+      var s = document.getElementById(l);
+      if (s) s.classList.toggle('active', l === lang);
+      var a = document.querySelector('.lang a[data-lang="' + l + '"]');
+      if (a) a.setAttribute('aria-current', l === lang ? 'page' : 'false');
+    });
+    document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang;
+    var h = location.hash.replace('#', '');
+    if (h && h.indexOf(lang + '-') === 0) {
+      var el = document.getElementById(h);
+      if (el) el.scrollIntoView();
+    }
+  }
+  show(pick());
+  window.addEventListener('hashchange', function () { show(pick()); });
+})();
+</script>
 
 </main>
 </body>
