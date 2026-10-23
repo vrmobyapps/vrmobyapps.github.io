@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tradeslip Privacy Policy</title>
+<meta name="description" content="Privacy policy and data deletion information for the Tradeslip estimate, invoice and receipt app by VR Moby.">
+<style>
+  :root { --bg:#ffffff; --ink:#15213a; --ink2:#4a5675; --line:#e3e7f0; --accent:#16295A; --soft:#eef2fb; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0f1526; --ink:#e8ecf5; --ink2:#aab3c8; --line:#273049; --accent:#8fb0ff; --soft:#1a2340; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font: 16px/1.6 -apple-system, "Segoe UI", Roboto, "IBM Plex Sans", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .meta { color: var(--ink2); font-size: 14px; margin-bottom: 24px; }
+  .box { background: var(--soft); border-radius: 12px; padding: 16px; margin: 16px 0; }
+  a { color: var(--accent); }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Tradeslip Privacy Policy</h1>
+  <p class="meta">Last updated: 23 October 2026 · App: Tradeslip (Android, package <code>com.vrmoby.tradeslip</code>) · Publisher: VR Moby · Contact: <a href="mailto:privacy@vrmoby.com">privacy@vrmoby.com</a></p>
+
+  <div class="box">
+    <strong>Summary.</strong> Tradeslip is an estimate, invoice and receipt app for tradespeople. Your business data (clients, documents, prices, photos, signatures) is stored only on your device. Tradeslip has no user accounts and no server of its own that receives your documents. The app sends anonymous usage statistics and crash reports to Google Firebase, and subscription status to RevenueCat and Google Play.
+  </div>
+
+  <h2>1. Data stored on your device</h2>
+  <p>Business profile (name, logo, contact details, tax ID), clients, items and prices, estimates, invoices, receipts, payments, expenses, receipt photos and signatures. This data lives in a local database inside the app's private storage on your phone. It is removed when you delete it in the app or uninstall the app.</p>
+
+  <h2>2. Data we or our service providers receive</h2>
+  <ul>
+    <li><strong>Usage analytics (Google Firebase Analytics):</strong> anonymous event counts such as "document created" or "paywall viewed", screen views, app version, device model and operating system version. No names, amounts, e-mail addresses or document contents are sent. Identifiers used by the SDK: the Firebase app-instance ID and, when available, the Android advertising ID.</li>
+    <li><strong>Crash reports (Firebase Crashlytics):</strong> stack traces, device model, operating system version and app version, so we can fix crashes.</li>
+    <li><strong>Remote configuration (Firebase Remote Config):</strong> the app downloads configuration values, for example the number of documents included without a subscription. No personal data is uploaded.</li>
+    <li><strong>Subscriptions (RevenueCat and Google Play Billing):</strong> your Google Play purchase token, product ID and subscription status, linked to an anonymous RevenueCat user ID. Payments are processed by Google Play; we never see your card details.</li>
+  </ul>
+
+  <h2>3. Optional features that use your Google account</h2>
+  <p><strong>Google Drive backup (Pro):</strong> if you turn it on, Tradeslip signs in with your Google account using only the <code>drive.appdata</code> scope and uploads a ZIP backup, encrypted in transit, to the hidden application folder of <em>your</em> Google Drive. We cannot read the rest of your Drive. You can sign out at any time in Settings, and you can remove the stored backups from your Google account (Google Drive → Settings → Manage apps → Tradeslip → Delete hidden app data).</p>
+
+  <h2>4. Permissions</h2>
+  <ul>
+    <li><strong>Camera:</strong> scanning receipts (QR codes and text recognition) and taking photos for your documents. Images are processed on the device. Text recognition uses Google ML Kit through Google Play services; the recognition model is downloaded once by Play services and the recognition itself runs on your phone. Tradeslip does not upload your images.</li>
+    <li><strong>Contacts:</strong> only when you tap "Import from contacts". We read the people you pick and nothing else.</li>
+    <li><strong>Notifications:</strong> one optional daily reminder when invoices are overdue. Reminders are scheduled locally on the device.</li>
+  </ul>
+
+  <h2>5. Sharing documents</h2>
+  <p>When you send a PDF through WhatsApp, e-mail, SMS or any other app, that app handles the file under its own privacy policy.</p>
+
+  <h2>6. Children</h2>
+  <p>Tradeslip is a business tool and is not directed to children under 13.</p>
+
+  <h2>7. Account and data deletion</h2>
+  <div class="box">
+    <p><strong>Tradeslip does not create user accounts.</strong> There is nothing to sign up for and no account to close. All business data stays on your device, so you control its deletion directly:</p>
+    <ul>
+      <li><strong>Delete everything in the app:</strong> open Settings → Delete all data. This permanently removes the local database, photos and signatures.</li>
+      <li><strong>Uninstall the app:</strong> removes all local app data from the device.</li>
+      <li><strong>Google Drive backups (Pro):</strong> sign out in Settings → Backup, then delete the hidden app data in your Google Drive settings (Manage apps → Tradeslip).</li>
+      <li><strong>Analytics and crash data:</strong> these records are not linked to your name. To request deletion of the data tied to your device's app-instance ID, e-mail <a href="mailto:privacy@vrmoby.com">privacy@vrmoby.com</a> from the device; we will process the request within 30 days.</li>
+      <li><strong>Subscription records:</strong> managed by Google Play and RevenueCat. You can cancel a subscription at any time in Google Play → Subscriptions. Billing records are retained as required by law.</li>
+    </ul>
+  </div>
+
+  <h2>8. Retention</h2>
+  <p>Local data: until you delete it or uninstall the app. Analytics and crash data: retained by Google according to Firebase defaults (analytics up to 14 months). Subscription records: retained by RevenueCat and Google as required for billing.</p>
+
+  <h2>9. Note on invoices</h2>
+  <p>Tradeslip produces estimates, invoices or proforma invoices, and receipts for your own records. It does not issue official tax invoices (for example Turkish e-Fatura or e-Arşiv) and is not a tax or accounting service.</p>
+
+  <h2>10. Changes</h2>
+  <p>We will update this page and the "last updated" date when the policy changes. This page is published at <a href="https://vrmobyapps.github.io/tradeslip/privacy">https://vrmobyapps.github.io/tradeslip/privacy</a>.</p>
+</main>
+</body>
+</html>
