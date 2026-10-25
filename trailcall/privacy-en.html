@@ -35,7 +35,7 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 <header>
 <div class="brand" lang="en">TRAILCALL</div>
 <h1>Privacy Policy</h1>
-<p class="meta">Effective date: 9 October 2026 · Trailcall for Android (com.vrmoby.trailcall) · Controller: VR Moby · Contact: <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
+<p class="meta">Effective date: 25 October 2026 · Trailcall for Android (com.vrmoby.trailcall) · Controller: VR Moby · Contact: <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
 </header>
 <nav aria-label="Language">
 <a href="privacy-tr.html" hreflang="tr" lang="tr">Türkçe</a>
@@ -43,17 +43,22 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 <a href="privacy-de.html" hreflang="de" lang="de">Deutsch</a>
 <a href="privacy-es.html" hreflang="es" lang="es">Español</a>
 <a href="privacy-pt-BR.html" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+<a href="privacy-fr.html" hreflang="fr" lang="fr">Français</a>
+<a href="privacy-it.html" hreflang="it" lang="it">Italiano</a>
+<a href="privacy-id.html" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="privacy-ar.html" hreflang="ar" lang="ar">العربية</a>
 </nav>
 <main>
 <section class="lead">
 <h2><b>1.</b> Summary</h2>
 <p>Trailcall is a push-to-talk walkie-talkie that works directly between nearby phones. There is no Trailcall server and no account. We, VR Moby, do not run any server that receives your voice, name, channel or location.</p>
-<p>Data leaves your device in three ways: your voice, name, channel and (only when you choose) your location go directly to nearby phones on your channel; Google's advertising service (free version) processes certain device data as described in section 8; and Google Firebase Analytics and Crashlytics process usage and crash data as described in section 11.</p>
+<p>Data leaves your device in three ways: your voice, name, channel, text messages and (only when you choose) your location and battery level go directly to nearby phones on your channel; Google's advertising service (free version) processes certain device data as described in section 8; and Google Firebase Analytics and Crashlytics process usage and crash data as described in section 11.</p>
 </section>
 <section>
 <h2><b>2.</b> Voice and microphone</h2>
 <p>The microphone is used only while you hold the talk button. Your audio travels directly from phone to phone over Bluetooth and Wi-Fi to people on the same channel and PIN. It is not sent to, or stored on, any server.</p>
 <p>For the replay feature, the last 20 received messages are cached on your device only. They are deleted when you clear the app's data or cache, or when you uninstall Trailcall.</p>
+<p>Short text messages (up to 120 characters) and quick messages travel the same way, directly to the phones on your channel, and are never sent to a server. A message history is kept only on your device (the last 3 messages; up to 500 with Trailcall Plus) and is deleted together with the app's data.</p>
 </section>
 <section>
 <h2><b>3.</b> Name and channel</h2>
@@ -69,6 +74,8 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 <h2><b>5.</b> Location</h2>
 <p>Your location (GPS) is used only when you tap one of these: "Mark this point" (saves a point on your device), "Send my location", "Share with channel" (sends a saved point) or "Live location" (Trailcall Plus; sends your position about every 10 seconds while you are in the channel and until you turn it off or leave).</p>
 <p>When you send it, your position (coordinates, accuracy, time) travels directly from phone to phone to the people on the same channel and PIN. It is never sent to, or stored on, any server, and it is not sent to Firebase or the advertising service. Phones that receive it keep it only in memory for the current session. Saved points stay only on your device.</p>
+<p>Group radar (new in 1.3.0): while you are in a channel and radar sharing is on, Trailcall sends your position, its accuracy and your battery level about every 45 seconds directly to the phones on your channel, so that friends with Trailcall Plus can see where everyone is and be warned when a member's signal is lost. You are asked the first time you join a channel; you can turn radar sharing off at any time under Settings → "Radar sharing (location + battery)". Nothing is sent to a server or stored; receiving phones keep the last position only in memory for the current session.</p>
+<p>SOS (free for everyone): when you start an SOS by holding the SOS button for 3 seconds, Trailcall repeatedly sends your position (if available), your battery level and an optional short message (up to 40 characters) directly to nearby Trailcall phones on your channel. A short SOS beacon containing the same information is also visible to other nearby Trailcall phones, even on other channels, while their app is open, so that help can come from anyone within range. The SOS stops when you tap "I'm safe" or leave the channel; receiving phones then discard it. SOS data never goes to a server, to Firebase or to the advertising service; receiving phones keep it only in memory. Trailcall is not a replacement for emergency services; where possible, also call the local emergency number.</p>
 
 </section>
 <section>
@@ -79,6 +86,7 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 <section>
 <h2><b>7.</b> Notifications</h2>
 <p>Trailcall shows an ongoing notification while you are in a channel, so the walkie-talkie keeps working with the screen off and you can always see that it is active.</p>
+<p>Trailcall also shows high-priority alerts on your device when a nearby phone sends an SOS (with an alarm sound and vibration) and when a radar member's signal has been lost for about 2 minutes (Trailcall Plus). These are local notifications created on your device; no push service is used.</p>
 
 </section>
 <section>
@@ -112,7 +120,7 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 </section>
 <section>
 <h2><b>13.</b> Data retention and deletion</h2>
-<p>Everything Trailcall stores is on your device: your name, channel and PIN, settings, marked points, cached messages and purchase status. Uninstalling the app, or clearing its data, removes it. There is nothing for us to delete on a server, because we have no server.</p>
+<p>Everything Trailcall stores is on your device: your name, channel and PIN, settings, marked points, cached voice and text messages, your radar preference and purchase status. Uninstalling the app, or clearing its data, removes it. There is nothing for us to delete on a server, because we have no server.</p>
 
 </section>
 <section>

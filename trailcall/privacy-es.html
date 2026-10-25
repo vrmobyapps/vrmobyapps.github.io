@@ -35,7 +35,7 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 <header>
 <div class="brand" lang="en">TRAILCALL</div>
 <h1>Política de privacidad</h1>
-<p class="meta">Fecha de entrada en vigor: 9 de octubre de 2026 · Trailcall para Android (com.vrmoby.trailcall) · Responsable: VR Moby · Contacto: <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
+<p class="meta">Fecha de entrada en vigor: 25 de octubre de 2026 · Trailcall para Android (com.vrmoby.trailcall) · Responsable: VR Moby · Contacto: <a href="mailto:vrmoby@gmail.com">vrmoby@gmail.com</a></p>
 </header>
 <nav aria-label="Idioma">
 <a href="privacy-tr.html" hreflang="tr" lang="tr">Türkçe</a>
@@ -43,17 +43,22 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 <a href="privacy-de.html" hreflang="de" lang="de">Deutsch</a>
 <span aria-current="page">Español</span>
 <a href="privacy-pt-BR.html" hreflang="pt-BR" lang="pt-BR">Português (BR)</a>
+<a href="privacy-fr.html" hreflang="fr" lang="fr">Français</a>
+<a href="privacy-it.html" hreflang="it" lang="it">Italiano</a>
+<a href="privacy-id.html" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="privacy-ar.html" hreflang="ar" lang="ar">العربية</a>
 </nav>
 <main>
 <section class="lead">
 <h2><b>1.</b> Resumen</h2>
 <p>Trailcall es un walkie talkie de pulsar para hablar que funciona directamente entre móviles cercanos. No hay servidor de Trailcall ni cuenta. Nosotros, VR Moby, no operamos ningún servidor que reciba tu voz, tu nombre, tu canal ni tu ubicación.</p>
-<p>Los datos salen de tu dispositivo de tres maneras: tu voz, nombre, canal y (solo si tú lo decides) tu ubicación van directamente a los móviles cercanos de tu canal; el servicio de publicidad de Google (versión gratuita) procesa ciertos datos del dispositivo como se describe en la sección 8; y Google Firebase Analytics y Crashlytics procesan datos de uso y de fallos como se describe en la sección 11.</p>
+<p>Los datos salen de tu dispositivo de tres maneras: tu voz, nombre, canal, mensajes de texto y (solo si tú lo decides) tu ubicación y nivel de batería van directamente a los móviles cercanos de tu canal; el servicio de publicidad de Google (versión gratuita) procesa ciertos datos del dispositivo como se describe en la sección 8; y Google Firebase Analytics y Crashlytics procesan datos de uso y de fallos como se describe en la sección 11.</p>
 </section>
 <section>
 <h2><b>2.</b> Voz y micrófono</h2>
 <p>El micrófono solo se usa mientras mantienes pulsado el botón de hablar. El audio va directamente de teléfono a teléfono por Bluetooth y Wi-Fi a las personas que están en el mismo canal y con el mismo PIN. No se envía a ningún servidor ni se almacena en ninguno.</p>
 <p>Para la función de repetición, los últimos 20 mensajes recibidos se guardan en caché únicamente en tu dispositivo. Se eliminan al borrar los datos o la caché de la aplicación, o al desinstalar Trailcall.</p>
+<p>Los mensajes de texto cortos (hasta 120 caracteres) y los mensajes rápidos viajan por el mismo camino, directamente a los móviles de tu canal, y nunca se envían a un servidor. El historial de mensajes se guarda solo en tu dispositivo (los últimos 3 mensajes; hasta 500 con Trailcall Plus) y se elimina junto con los datos de la aplicación.</p>
 </section>
 <section>
 <h2><b>3.</b> Nombre y canal</h2>
@@ -69,6 +74,8 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 <h2><b>5.</b> Ubicación</h2>
 <p>Tu ubicación (GPS) se usa solo cuando tocas uno de estos botones: «Marcar este punto» (guarda un punto en tu dispositivo), «Enviar mi ubicación», «Compartir con el canal» (envía un punto guardado) o «Ubicación en vivo» (Trailcall Plus; envía tu posición cada 10 segundos aproximadamente mientras estás en el canal y hasta que la desactives o salgas).</p>
 <p>Al enviarla, tu posición (coordenadas, precisión, hora) viaja directamente de móvil a móvil a las personas del mismo canal y PIN. Nunca se envía ni se guarda en un servidor, y no se envía a Firebase ni al servicio de publicidad. Los móviles que la reciben la conservan solo en memoria durante la sesión actual. Los puntos guardados permanecen solo en tu dispositivo.</p>
+<p>Radar de grupo (novedad en 1.3.0): mientras estás en un canal y el radar está activado, Trailcall envía tu posición, su precisión y tu nivel de batería cada 45 segundos aproximadamente, directamente a los móviles de tu canal, para que tus amigos con Trailcall Plus vean dónde está cada uno y reciban un aviso cuando se pierda la señal de un miembro. Se te pregunta la primera vez que entras en un canal; puedes desactivarlo en cualquier momento en Ajustes → «Compartir en el radar (ubicación + batería)». Nada se envía a un servidor ni se guarda; los móviles que lo reciben conservan la última posición solo en memoria durante la sesión actual.</p>
+<p>SOS (gratis para todos): cuando inicias un SOS manteniendo pulsado el botón SOS durante 3 segundos, Trailcall envía repetidamente tu posición (si está disponible), tu nivel de batería y un mensaje corto opcional (hasta 40 caracteres) directamente a los móviles Trailcall cercanos de tu canal. Una breve señal SOS con la misma información también es visible para otros móviles Trailcall cercanos, incluso en otros canales, mientras su aplicación está abierta, para que la ayuda pueda llegar de cualquier persona al alcance. El SOS termina cuando tocas «Estoy a salvo» o sales del canal; los móviles que lo recibieron lo descartan entonces. Los datos del SOS nunca van a un servidor, a Firebase ni al servicio de publicidad; los móviles que los reciben los conservan solo en memoria. Trailcall no sustituye a los servicios de emergencia; si es posible, llama también al número de emergencias local.</p>
 
 </section>
 <section>
@@ -79,6 +86,7 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 <section>
 <h2><b>7.</b> Notificaciones</h2>
 <p>Mientras estás en un canal, Trailcall muestra una notificación permanente. Así el walkie-talkie sigue funcionando con la pantalla apagada y siempre puedes ver que está activo.</p>
+<p>Trailcall también muestra alertas de alta prioridad en tu dispositivo cuando un móvil cercano envía un SOS (con sonido de alarma y vibración) y cuando la señal de un miembro del radar lleva unos 2 minutos perdida (Trailcall Plus). Son notificaciones locales creadas en tu dispositivo; no se usa ningún servicio de notificaciones push.</p>
 
 </section>
 <section>
@@ -112,7 +120,7 @@ footer{color:#A3A7A6;font-size:13px;margin-top:24px;text-align:center}
 </section>
 <section>
 <h2><b>13.</b> Conservación y eliminación de datos</h2>
-<p>Todo lo que Trailcall guarda está en tu dispositivo: tu nombre, el canal y el PIN, los ajustes, los puntos marcados, los mensajes en caché y el estado de la compra. Al desinstalar la aplicación o borrar sus datos, todo ello se elimina. No tenemos nada que borrar en un servidor, porque no tenemos servidor.</p>
+<p>Todo lo que Trailcall guarda está en tu dispositivo: tu nombre, el canal y el PIN, los ajustes, los puntos marcados, los mensajes de voz y de texto en caché, la preferencia del radar y el estado de la compra. Al desinstalar la aplicación o borrar sus datos, todo ello se elimina. No tenemos nada que borrar en un servidor, porque no tenemos servidor.</p>
 
 </section>
 <section>
